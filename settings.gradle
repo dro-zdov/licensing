@@ -1,0 +1,2 @@
+rootProject.name = 'licensing'
+include ':generator', ':reader'

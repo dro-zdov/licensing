@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+
+group 'com.codesample.licensing'
+version '1.0'
+
+java {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+application {
+    mainClass = 'com.codesample.licensing.generator.Main'
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation project(':reader')
+}
